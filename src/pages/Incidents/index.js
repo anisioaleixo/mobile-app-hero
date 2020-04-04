@@ -26,7 +26,7 @@ export default function Incidents() {
             <Text style={styles.description}>Escolha um caso abaixo e salve o dia!</Text>
 
             <FlatList 
-                data={[1,2,3,4,5]}
+                data={[1,2,3,4]}
                 style={styles.incidentList}
                 keyExtractor={incident => String(incident)}
                 showsVerticalScrollIndicator={false}
@@ -49,12 +49,8 @@ export default function Incidents() {
                         <Feather name="arrow-right" size={16} color="#e02041" />
                     </TouchableOpacity>
                 </View>
-
                 )}
-            />        
-
-
-
+            />      
         </View>
     );
 }
